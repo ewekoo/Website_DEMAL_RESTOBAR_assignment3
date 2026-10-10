@@ -1,0 +1,120 @@
+<!-- Author: Salimov Yeskendir -->
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Salimov Yeskendir">
+    <meta name="description" content="Информация о ресторане Demal в Астане">
+    <title>Demal — ресторан в Астане</title>
+    <!-- Bootstrap 5.3.8 is loaded from the official CDN. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-md navbar-dark brand-navbar shadow-sm">
+        <!-- A container-fluid keeps the navigation comfortable across the full viewport width. -->
+        <div class="container-fluid">
+            <a class="navbar-brand fw-semibold text-uppercase" href="index.html">Demal Resto Bar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primary-navigation" aria-controls="primary-navigation" aria-expanded="false" aria-label="Открыть навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="primary-navigation">
+                <ul class="navbar-nav ms-auto text-center gap-md-2">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Меню</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- The centered container gives the main content a readable desktop width. -->
+    <main class="container py-4 py-md-5">
+        <section class="restaurant-info row justify-content-center mb-5">
+            <div class="col-12 col-lg-10">
+                <h1 class="display-5 fw-bold text-center text-md-start brand-text mb-3">Ресторан Demal в Астане</h1>
+                <h2 class="h3 text-center text-md-start mb-4">О ресторане</h2>
+
+                <!-- This nested row keeps the logo and description aligned at every breakpoint. -->
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-md-4">
+                        <img class="img-fluid rounded-4 shadow-sm brand-logo" src="images/demal-logo.jpg" alt="Логотип ресторана Demal">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <p class="lead text-body-secondary mb-0">
+                            Demal — ресторан в Астане. Здесь посетители могут ознакомиться с меню,
+                            выбрать блюда и узнать актуальные цены. На этом сайте представлена
+                            информация о ресторане, фотографии заведения, меню и контактные данные.
+                            Посетители также могут посмотреть график работы и ознакомиться с формой
+                            заявки на бронирование столика. Сайт создан для того, чтобы упростить
+                            поиск основной информации о Demal и помочь гостям подготовиться к
+                            посещению ресторана.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Card component adapted for the restaurant's real photo gallery. -->
+        <section id="gallery" class="restaurant-gallery mb-5">
+            <h2 class="h3 text-center text-md-start mb-4">Фотографии ресторана</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <figure class="col card h-100 border-0 shadow-sm position-relative">
+                    <span class="badge text-bg-warning position-absolute top-0 start-0 m-3">Demal</span>
+                    <img class="card-img-top photo-image" src="images/demal-exterior.jpg" alt="Внешний вид ресторана Demal в Астане">
+                    <figcaption class="card-body"><p class="card-text mb-0">Внешний вид ресторана Demal.</p></figcaption>
+                </figure>
+
+                <figure class="col card h-100 border-0 shadow-sm">
+                    <img class="card-img-top photo-image" src="images/demal-interior.jpg" alt="Интерьер ресторана Demal">
+                    <figcaption class="card-body"><p class="card-text mb-0">Интерьер ресторана Demal.</p></figcaption>
+                </figure>
+
+                <figure class="col card h-100 border-0 shadow-sm">
+                    <img class="card-img-top photo-image" src="images/demal-food.jpg" alt="Блюдо из меню ресторана Demal">
+                    <figcaption class="card-body"><p class="card-text mb-0">Блюдо из меню ресторана Demal.</p></figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="review" class="row justify-content-center">
+            <div class="col-12 col-md-9 col-lg-8">
+                <h2 class="h3 text-center text-md-start mb-3">Отзыв посетителя</h2>
+                <blockquote class="border-start border-4 border-warning ps-4 py-2 mb-2">
+                    <p class="mb-0">«Мне понравилась атмосфера ресторана и качество блюд.»</p>
+                </blockquote>
+                <p class="small text-body-secondary text-end mb-0">— Али, 5 октября 2026 года</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-surface text-white py-4 mt-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <section class="col">
+                    <h2 class="h5">Часы работы</h2>
+                    <ul class="list-unstyled mb-0 small">
+                        <li>Понедельник — четверг: 13:00–01:00</li>
+                        <li>Пятница — суббота: 14:00–02:00</li>
+                        <li>Воскресенье: 13:00–01:00</li>
+                    </ul>
+                </section>
+                <section class="col text-center text-md-start">
+                    <h2 class="h5">Контакты</h2>
+                    <address class="mb-2 small">
+                        РестоБар Demal<br>
+                        ул. Сексек Ата, 19, Астана<br>
+                        Телефон: <a class="link-warning" href="tel:+77088263544">+7 (708) 826-35-44</a>
+                    </address>
+                    <p class="small text-white-50 mb-0">&copy; 2026 Demal RestoBar</p>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+    <a class="btn btn-warning btn-lg d-block d-md-none mx-3 mb-3" href="tel:+77088263544">Позвонить в Demal</a>
+    <a class="btn btn-warning btn-lg d-none d-md-inline-block position-fixed bottom-0 end-0 m-3 shadow z-3" href="tel:+77088263544">Позвонить в Demal</a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
